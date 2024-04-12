@@ -1,14 +1,14 @@
 CC=clang
 CFLAGS=-Wall -Wextra -Wpedantic
 
-all: main hello_world
+all: nsFork helloWorld
 
-main: main.c
-	$(CC) $(CFLAGS) -o main main.c
+nsFork: nsFork.c
+	$(CC) $(CFLAGS) -o nsFork nsFork.c
 
-hello_world: hello_world.c
-	$(CC) $(CFLAGS) -o hello_world hello_world.c
+helloWorld: helloWorld.c
+	$(CC) $(CFLAGS) -o helloWorld helloWorld.c
 
 clean:
-	rm -f main hello_world
+	rm -f nsFork helloWorld
 
