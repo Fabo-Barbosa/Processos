@@ -17,8 +17,8 @@ int main(int argc, char *argv[]) {
             fprintf(stderr, "Erro ao criar processo filho\n");
             return 1;
         } else if (pid == 0) {  // Processo filho
-            execl("./hello_world", "hello_world", NULL);
-            fprintf(stderr, "Erro ao executar o programa hello_world\n");
+            execl("./helloWorld", "helloWorld", NULL);
+            fprintf(stderr, "Erro ao executar o programa hellWorld\n");
             return 1;
         }
     }
